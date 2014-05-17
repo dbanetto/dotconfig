@@ -4,15 +4,39 @@
 # $1 file to install
 # $2 path to install to
 # $3 file name to install to
-function dotfile {
+function install {
 	if [ -f $2/$3 ] 
 	then
-		mkdir backup
-		cp $2/$3 backup/$1
+		mkdir -p backup
+		cp $2/$3 backup/$3
 		rm $2/$3
 	fi
 	ln $1 $2/$3
 }
 
-dotfile zshrc ~ .zshrc
-dotfile gitconfig ~ .gitconfig
+# $1 crontab time syntax
+# $2 command
+function installcron {
+	crontab -l > /tmp/crontab_
+	if  grep "$2" /tmp/crontab_  ; then
+		echo "Cron Job for this script already exits"
+	else 
+		echo "$1 $2" >> /tmp/crontab_
+		crontab < /tmp/crontab_
+	fi
+	rm /tmp/crontab_
+}
+
+
+
+
+#wallpaper script
+installcron '0 0-23/2  * * *' "bash $PWD/util/wallpaper.sh"
+
+#Sublime Text
+install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-settings
+
+#Zsh (requires oh-my-zsh)
+install zshrc ~ .zshrc
+#git
+install gitconfig ~ .gitconfig
