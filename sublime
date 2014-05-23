@@ -1,7 +1,7 @@
 {
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"spell_check": true,
-	"auto_complete": false,
+	"auto_complete": true,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"hot_exit": false,

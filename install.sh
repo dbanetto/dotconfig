@@ -35,6 +35,9 @@ function installcron {
 #wallpaper script
 installcron '0 0-23/2  * * *' "bash $PWD/util/wallpaper.sh"
 
+#Vim
+install vim/vimrc ~ .vimrc
+ln -s $PWD/vim ~/.vim
 #Sublime Text
 install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-settings
 
