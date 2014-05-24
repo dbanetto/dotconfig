@@ -105,7 +105,7 @@ set background=dark
 if GUI() || &t_Co >= 256
   set t_Co=256
   " colorscheme badwolf
-  colorscheme gruvbox
+  colorscheme earendel
   " colorscheme pencil
   " color fixes
   " hi Comment ctermfg=bg ctermbg=240
