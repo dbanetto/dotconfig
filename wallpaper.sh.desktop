@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/drb/Documents/git/dotconfig/util/wallpaper.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_NZ]=Wallpaper
+Name=Wallpaper
+Comment[en_NZ]=
+Comment=

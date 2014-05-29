@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#Make gnome-terminal keep the CWD when making new tab
-source /etc/profile.d/vte.sh
-
 #Disable blinking cursor
 gsettings set org.gnome.desktop.interface cursor-blink false
 
