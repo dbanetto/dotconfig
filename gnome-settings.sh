@@ -12,3 +12,17 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super><
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super><Shift>3']"
 
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>D']"
+
+gsettings set org.gnome.settings-daemon.peripherals.mouse middle-button-enabled true
+
+# Does not seem like this part can be done here
+#gsettings set org.gnome.desktop.app-folders.folder folder-children "[ 'qt' , 'other' , 'office' ]"
+
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/qt/ name "Qt"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/qt/ apps "['assistant-qt4.desktop', 'designer-qt4.desktop', 'linguist-qt4.desktop', 'qdbusviewer-qt4.desktop', 'qtconfig-qt4.desktop']"
+
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/other/ name "Other"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/other/ apps "['uxterm.desktop', 'xterm.desktop', 'gsharp.desktop', 'java-monitoring-and-management-console.desktop' , 'flash-player-properties.desktop' , 'gnome-search-panel.desktop'  ]"
+
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/office/ name "Libre Office"
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/office/ apps "['libreoffice-base.desktop','libreoffice-calc.desktop','libreoffice-draw.desktop','libreoffice-impress.desktop','libreoffice-math.desktop','libreoffice-startcenter.desktop','libreoffice-writer.desktop','libreoffice-xsltfilter.desktop']"
