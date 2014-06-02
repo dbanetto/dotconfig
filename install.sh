@@ -9,7 +9,7 @@ function install {
 	then
 		echo "Backing up $2/$3 to backup/$3"
 		mkdir -p backup
-		cp $2/$3 backup/$2
+		cp $2/$3 backup/$3
 		rm $2/$3
 	fi
 	echo "Linking $1 to $2/$3"
@@ -22,6 +22,8 @@ ln -s $PWD/vim ~/.vim
 
 #Code::Blocks
 install codeblocks.conf ~/.codeblocks default.conf
+#Code::Block Hote keys
+install codeblocks-hotkeys.ini ~/.codeblocks cbKeyBinder10.ini
 
 #Sublime Text
 install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-settings

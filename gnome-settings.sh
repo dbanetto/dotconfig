@@ -28,5 +28,3 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/java/ name "Java"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/java/ apps "['java-monitoring-and-management-console.desktop' , 'java-mission-control.desktop','java-monitoring-and-management-console.desktop','java-policy-settings.desktop','java-visualvm.desktop','sun_java.desktop','sun-java.desktop','sun-javaws.desktop' ]"
-
-
