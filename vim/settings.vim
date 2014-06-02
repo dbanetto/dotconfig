@@ -125,7 +125,7 @@ if GUI()
   elseif OSX()
     set gfn=Menlo:h13
   else
-    set gfn=Liberation\ Mono\ 11
+    set gfn=DejaVu\ Sans\ Mono\ 11
   endif
   set guioptions-=m
   nmap <F8> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>

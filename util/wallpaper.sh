@@ -1,5 +1,5 @@
 #!/bin/bash
-WPPATH=$HOME/Pictures/wallpapers_1920x1080/
+WPPATH=$HOME/Pictures/wallpapers/
 
 while true
 do

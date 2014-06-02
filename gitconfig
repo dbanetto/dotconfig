@@ -3,6 +3,8 @@
 	name = David Barnett
 [core]
 	editor = vim
+[help]
+	autocorrect = 3
 [credential]
 	helper = cache --timeout=3600
 [log]
@@ -47,7 +49,7 @@
 	new = diff --cached
 
 	# shows only changes to files in current directory
-	here = status .
+	here = status -sb .
 
 	# undo last commit
 	undo = reset HEAD~1

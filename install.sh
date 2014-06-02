@@ -9,34 +9,21 @@ function install {
 	then
 		echo "Backing up $2/$3 to backup/$3"
 		mkdir -p backup
-		cp $2/$3 backup/$3
+		cp $2/$3 backup/$2
 		rm $2/$3
 	fi
 	echo "Linking $1 to $2/$3"
-	ln $1 $2/$3
-}
-
-# $1 crontab time syntax
-# $2 command
-function installcron {
-	crontab -l > /tmp/crontab_
-	if  grep "$2" /tmp/crontab_  ; then
-		echo "Cron Job for this script already exits"
-	else
-		echo "$1 $2" >> /tmp/crontab_
-		crontab < /tmp/crontab_
-	fi
-	rm /tmp/crontab_
+	ln -s $PWD/$1 $2/$3
 }
 
 #Vim
 install vim/vimrc ~ .vimrc
 ln -s $PWD/vim ~/.vim
-#Sublime Text
 
 #Code::Blocks
 install codeblocks.conf ~/.codeblocks default.conf
 
+#Sublime Text
 install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-settings
 
 #Zsh (requires oh-my-zsh)
