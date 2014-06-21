@@ -50,7 +50,9 @@ HIST_STAMPS="dd/mm/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(gitfast cp git-extras systemd )
 
+
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -58,7 +60,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/cor
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-export LANG=en_NZ.UTF-8
+export LANG=en_GB.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -72,4 +74,7 @@ fi
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+if [ "$COLORTERM" = "gnome-terminal" ] ; then
 source /etc/profile.d/vte.sh
+fi
