@@ -28,6 +28,8 @@ install codeblocks-hotkeys.ini ~/.codeblocks cbKeyBinder10.ini
 #Sublime Text
 install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-settings
 
+#Elegance Colours
+install elegance-colors.ini ~/.config/elegance-colors elegance-colors.ini
 #Zsh (requires oh-my-zsh)
 install zshrc ~ .zshrc
 #git
