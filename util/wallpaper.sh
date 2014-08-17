@@ -7,7 +7,7 @@ do
 	WP=$WPPATH$WP
 	cp "$WP" /etc/lightdm/wallpaper/current
 
-if [ "$DESKTOP_SESSION" == "gnome" ]; then
+if [ "$DESKTOP_SESSION" == "gnome" -o "$DESKTOP_SESSION" == "cinnamon" ]; then
 	#Set Wallpaper
 	gsettings set org.gnome.desktop.background picture-uri "file://$WP"
 	gsettings set org.gnome.desktop.screensaver picture-uri "file://$WP"
