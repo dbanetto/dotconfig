@@ -1,10 +1,12 @@
 {
+	"font_face":"DejaVu Sans Mono",
+	"font_size" : "11",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"spell_check": true,
 	"auto_complete": true,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"hot_exit": false,
-	"remember_open_files": false,
-	"update_check": false
+	"remember_open_files" : false,
+	"update_check" : false
 }
