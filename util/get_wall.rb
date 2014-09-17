@@ -3,7 +3,7 @@
 WPPATH=File.expand_path "~/Pictures/wallpapers/"
 
 WPS = Dir.entries(WPPATH)
-TIME_OUT = 60*60
+TIME_OUT = 30*60
 
 # Remove '.' and '..'
 WPS.shift(2)

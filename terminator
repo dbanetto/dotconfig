@@ -1,0 +1,26 @@
+[global_config]
+  enabled_plugins = InactivityWatch, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  inactive_color_offset = 0.7
+[keybindings]
+  next_tab = <Primary><Shift>Right
+  prev_tab = <Primary><Shift>Left
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    background_image = None
+    use_system_font = False
+    foreground_color = "#cccccc"
+    show_titlebar = False
+    font = DejaVu Sans Mono for Powerline 10
+    background_color = "#2d2d2d"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

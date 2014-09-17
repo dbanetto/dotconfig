@@ -30,7 +30,12 @@ install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-setti
 
 #Elegance Colours
 install elegance-colors.ini ~/.config/elegance-colors elegance-colors.ini
+
 #Zsh (requires oh-my-zsh)
 install zshrc ~ .zshrc
+
 #git
 install gitconfig ~ .gitconfig
+
+# Terminator
+install terminator ~/.config/terminator config

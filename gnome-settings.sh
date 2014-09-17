@@ -31,3 +31,5 @@ gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folder
 
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/steam/ name "Steam"
 gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/steam/ apps "$(bash util/steamgames.sh)"
+
+gesttings set org.cinnamon.desktop.default-applications.terminal exec terminator

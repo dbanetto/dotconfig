@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/Documents/git/dotconfig/util
 while true ; do
 	# Call Ruby script for time dependent wallpaper
 	WP=$(ruby get_wall.rb)
@@ -21,5 +22,5 @@ while true ; do
 
 	WP=""
 	#Sleep off that hard work
-	sleep 1h
+	sleep 30m
 done
