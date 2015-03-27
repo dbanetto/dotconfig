@@ -1,10 +1,10 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
-Exec=/home/drb/Documents/git/dotconfig/util/wallpaper.sh
+Exec=/home/drb/Documents/git/dotconfig/util/wallpaper.py
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
-Name[en_NZ]=Wallpaper
 Name=Wallpaper
-Comment[en_NZ]=
 Comment=
+Name[en_GB]=wallpaper.py.desktop

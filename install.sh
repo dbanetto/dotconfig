@@ -16,25 +16,25 @@ function install {
 	ln -s $PWD/$1 $2/$3
 }
 
-#Vim
+# Vim
 install vim/vimrc ~ .vimrc
 ln -s $PWD/vim ~/.vim
 
-#Code::Blocks
+# Code::Blocks
 install codeblocks.conf ~/.codeblocks default.conf
-#Code::Block Hote keys
+# Code::Block Hotkeys
 install codeblocks-hotkeys.ini ~/.codeblocks cbKeyBinder10.ini
 
-#Sublime Text
+# Sublime Text
 install sublime ~/.config/sublime-text-3/Packages/User Preferences.sublime-settings
 
-#Elegance Colours
+# Elegance Colours
 install elegance-colors.ini ~/.config/elegance-colors elegance-colors.ini
 
-#Zsh (requires oh-my-zsh)
+# zsh (requires oh-my-zsh)
 install zshrc ~ .zshrc
 
-#git
+# git
 install gitconfig ~ .gitconfig
 
 # Terminator
