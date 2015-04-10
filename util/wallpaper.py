@@ -48,8 +48,11 @@ def apply_wallpaper(file_path):
 
     desktop_session = os.environ['DESKTOP_SESSION']
 
-    if desktop_session == 'gnome' or desktop_session == 'cinnamon':
+    if desktop_session == 'gnome':
         os.system('gsettings set org.gnome.desktop.background picture-uri "file://{}"'
+                  .format(file_path))
+    elif desktop_session == 'cinnamon':
+        os.system('gsettings set org.cinnamon.desktop.background picture-uri "file://{}"'
                   .format(file_path))
     elif desktop_session == 'xfce4':
         os.system('xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s "{}"'
